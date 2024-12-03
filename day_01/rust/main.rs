@@ -27,7 +27,7 @@ fn get_lists() -> Result<(Vec<i32>, Vec<i32>), std::io::Error> {
     Ok((list_left, list_right))
 }
 
-fn get_difference(list_left: &Vec<i32>, list_right: &Vec<i32>) -> u32 {
+fn get_difference(list_left: &[i32], list_right: &[i32]) -> u32 {
     list_left
         .iter()
         .zip(list_right.iter())
